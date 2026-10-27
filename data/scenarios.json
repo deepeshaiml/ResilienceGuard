@@ -1,0 +1,59 @@
+[
+  {
+    "as_of": "2026-10-26T08:00:00Z",
+    "description": "Physical loss of the primary data center; the independent recovery site and west vault remain available.",
+    "evidence_id": "SC-001",
+    "id": "physical-disaster",
+    "name": "Primary data center lost",
+    "unavailable_locations": [
+      "vault-east"
+    ],
+    "unavailable_nodes": [
+      "hospital-app",
+      "clinical-db",
+      "identity-service",
+      "directory-store",
+      "primary-compute",
+      "primary-network",
+      "primary-storage",
+      "vault-east"
+    ],
+    "untrusted_backup_ids": []
+  },
+  {
+    "as_of": "2026-10-26T08:00:00Z",
+    "description": "A ransomware event leaves the newest clinical database snapshot corrupted and explicitly untrusted; older recovery points remain for comparison.",
+    "evidence_id": "SC-002",
+    "id": "ransomware",
+    "name": "Ransomware and untrusted snapshot",
+    "unavailable_locations": [],
+    "unavailable_nodes": [
+      "hospital-app",
+      "clinical-db"
+    ],
+    "untrusted_backup_ids": [
+      "bkp-db-20261026-0700"
+    ]
+  },
+  {
+    "as_of": "2026-10-26T08:00:00Z",
+    "description": "Primary site power and network fail while the east vault is lost; the west vault and isolated recovery network remain reachable.",
+    "evidence_id": "SC-003",
+    "id": "power-network",
+    "name": "Concurrent power and network disruption",
+    "unavailable_locations": [
+      "vault-east"
+    ],
+    "unavailable_nodes": [
+      "hospital-app",
+      "clinical-db",
+      "identity-service",
+      "directory-store",
+      "primary-compute",
+      "primary-network",
+      "primary-storage",
+      "vault-east"
+    ],
+    "untrusted_backup_ids": []
+  }
+]

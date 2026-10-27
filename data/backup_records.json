@@ -1,0 +1,64 @@
+[
+  {
+    "created_at": "2026-10-26T06:00:00Z",
+    "evidence_id": "BK-001",
+    "id": "bkp-app-20261026-0600",
+    "location_id": "vault-west",
+    "manifest_sha256": "6fdf1734bcc97d6fa27dece07f0f80aa5435c43a87746a4f92a896c6424d6329",
+    "relative_path": "bkp-app-20261026-0600.json",
+    "retention_class": "daily-30d",
+    "scenario_untrusted": [],
+    "service_id": "hospital-app",
+    "synthetic": true
+  },
+  {
+    "created_at": "2026-10-26T03:00:00Z",
+    "evidence_id": "BK-002",
+    "id": "bkp-db-20261026-0300",
+    "location_id": "vault-east",
+    "manifest_sha256": "64866b06e0666c501aab1e9ba0c6323322a527d1155afbac86ee73cffd3cb0d4",
+    "relative_path": "bkp-db-20261026-0300.json",
+    "retention_class": "daily-30d",
+    "scenario_untrusted": [],
+    "service_id": "clinical-db",
+    "synthetic": true
+  },
+  {
+    "created_at": "2026-10-26T05:00:00Z",
+    "evidence_id": "BK-003",
+    "id": "bkp-db-20261026-0500",
+    "location_id": "vault-west",
+    "manifest_sha256": "64866b06e0666c501aab1e9ba0c6323322a527d1155afbac86ee73cffd3cb0d4",
+    "relative_path": "bkp-db-20261026-0500.json",
+    "retention_class": "daily-30d",
+    "scenario_untrusted": [],
+    "service_id": "clinical-db",
+    "synthetic": true
+  },
+  {
+    "created_at": "2026-10-26T07:00:00Z",
+    "evidence_id": "BK-004",
+    "id": "bkp-db-20261026-0700",
+    "location_id": "vault-west",
+    "manifest_sha256": "64866b06e0666c501aab1e9ba0c6323322a527d1155afbac86ee73cffd3cb0d4",
+    "relative_path": "bkp-db-20261026-0700.json",
+    "retention_class": "daily-30d",
+    "scenario_untrusted": [
+      "ransomware"
+    ],
+    "service_id": "clinical-db",
+    "synthetic": true
+  },
+  {
+    "created_at": "2026-10-26T07:15:00Z",
+    "evidence_id": "BK-005",
+    "id": "bkp-id-20261026-0715",
+    "location_id": "vault-west",
+    "manifest_sha256": "a5e035e0e7d1bd37550750a55b61240cec27a5682649442088efb9e2e3efcff2",
+    "relative_path": "bkp-id-20261026-0715.json",
+    "retention_class": "daily-30d",
+    "scenario_untrusted": [],
+    "service_id": "identity-service",
+    "synthetic": true
+  }
+]

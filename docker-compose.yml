@@ -1,0 +1,63 @@
+services:
+  db:
+    image: postgres:18.6-alpine
+    environment:
+      POSTGRES_DB: resilienceguard
+      POSTGRES_USER: rg
+      POSTGRES_PASSWORD: rg-local-demo-only
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rg -d resilienceguard"]
+      interval: 5s
+      timeout: 3s
+      retries: 15
+    volumes:
+      - postgres_data_v18:/var/lib/postgresql
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://rg:rg-local-demo-only@db:5432/resilienceguard
+      DATA_ROOT: /app/data
+      RESTORE_ROOT: /app/restores
+      OLLAMA_URL: ${OLLAMA_URL:-}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3:8b}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${RG_API_PORT:-8000}:8000"
+    volumes:
+      - ./data:/app/data:ro
+      - restore_data:/app/restores
+      - app_state:/app/artifacts
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      VITE_PROXY_TARGET: http://api:8000
+    depends_on:
+      - api
+    ports:
+      - "127.0.0.1:${RG_WEB_PORT:-5173}:5173"
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:0.40.11
+    profiles: ["llm"]
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  postgres_data_v18:
+  restore_data:
+  app_state:
+  ollama_models:

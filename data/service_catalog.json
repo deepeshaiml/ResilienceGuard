@@ -1,0 +1,54 @@
+[
+  {
+    "critical": true,
+    "dependencies": [
+      "clinical-db",
+      "identity-service"
+    ],
+    "estimated_restore_seconds": 95,
+    "id": "hospital-app",
+    "name": "Hospital Care Coordination",
+    "rpo_seconds": 14400,
+    "rto_seconds": 7200,
+    "tier": 0
+  },
+  {
+    "critical": true,
+    "dependencies": [
+      "recovery-storage",
+      "recovery-network"
+    ],
+    "estimated_restore_seconds": 150,
+    "id": "clinical-db",
+    "name": "Clinical Records Database",
+    "rpo_seconds": 7200,
+    "rto_seconds": 3600,
+    "tier": 0
+  },
+  {
+    "critical": true,
+    "dependencies": [
+      "directory-store",
+      "recovery-network"
+    ],
+    "estimated_restore_seconds": 75,
+    "id": "identity-service",
+    "name": "Clinical Identity Service",
+    "rpo_seconds": 3600,
+    "rto_seconds": 1800,
+    "tier": 0
+  },
+  {
+    "critical": true,
+    "dependencies": [
+      "recovery-storage",
+      "recovery-network"
+    ],
+    "estimated_restore_seconds": 60,
+    "id": "directory-store",
+    "name": "Directory Data Store",
+    "rpo_seconds": 14400,
+    "rto_seconds": 3600,
+    "tier": 1
+  }
+]

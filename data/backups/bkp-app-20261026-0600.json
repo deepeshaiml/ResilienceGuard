@@ -1,0 +1,68 @@
+{
+  "data_type": "application",
+  "fixture": true,
+  "record_count": 12,
+  "records": [
+    {
+      "queue": "triage",
+      "record_id": "SIM-A-0001",
+      "synthetic": true
+    },
+    {
+      "queue": "lab",
+      "record_id": "SIM-A-0002",
+      "synthetic": true
+    },
+    {
+      "queue": "triage",
+      "record_id": "SIM-A-0003",
+      "synthetic": true
+    },
+    {
+      "queue": "lab",
+      "record_id": "SIM-A-0004",
+      "synthetic": true
+    },
+    {
+      "queue": "triage",
+      "record_id": "SIM-A-0005",
+      "synthetic": true
+    },
+    {
+      "queue": "lab",
+      "record_id": "SIM-A-0006",
+      "synthetic": true
+    },
+    {
+      "queue": "triage",
+      "record_id": "SIM-A-0007",
+      "synthetic": true
+    },
+    {
+      "queue": "lab",
+      "record_id": "SIM-A-0008",
+      "synthetic": true
+    },
+    {
+      "queue": "triage",
+      "record_id": "SIM-A-0009",
+      "synthetic": true
+    },
+    {
+      "queue": "lab",
+      "record_id": "SIM-A-0010",
+      "synthetic": true
+    },
+    {
+      "queue": "triage",
+      "record_id": "SIM-A-0011",
+      "synthetic": true
+    },
+    {
+      "queue": "lab",
+      "record_id": "SIM-A-0012",
+      "synthetic": true
+    }
+  ],
+  "schema_version": 1
+}

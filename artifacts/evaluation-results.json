@@ -1,0 +1,76 @@
+{
+  "experiment": "fixed-seed synthetic fixtures; no customer or production data",
+  "reference_time": "2026-10-26T08:00:00Z",
+  "seed": 20261026,
+  "test_suite": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10
+  },
+  "checks": [
+    {
+      "name": "SHA-256 expected good/bad classification",
+      "passed": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    {
+      "name": "RPO freshness classification",
+      "passed": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    {
+      "name": "Missing backup inventory classification",
+      "passed": 4,
+      "total": 4,
+      "rate": 1.0
+    },
+    {
+      "name": "Recovery dependency matrix (4 services \u00d7 3 scenarios)",
+      "passed": 12,
+      "total": 12,
+      "rate": 1.0
+    },
+    {
+      "name": "Approved isolated restore copy + hash + fixture health",
+      "passed": 3,
+      "total": 3,
+      "rate": 1.0
+    },
+    {
+      "name": "Unauthorized/untrusted restore prevention",
+      "passed": 2,
+      "total": 2,
+      "rate": 1.0
+    },
+    {
+      "name": "Evidence/action grounding against rule-only baseline",
+      "passed": 1,
+      "total": 1,
+      "rate": 1.0
+    }
+  ],
+  "restore_duration_seconds": {
+    "samples": 3,
+    "observed": [
+      0.0006104580097598955,
+      0.0005811250011902303,
+      0.0005507079913513735
+    ],
+    "mean": 0.0005807636674338331,
+    "minimum": 0.0005507079913513735,
+    "maximum": 0.0006104580097598955,
+    "measurement_scope": "local file copy, source/destination SHA-256 checks, and synthetic JSON shape check; not application RTO"
+  },
+  "rule_only_baseline_action_ids": [
+    "clinical-db"
+  ],
+  "assistant_mode": "deterministic_fallback",
+  "assistant_action_ids": [
+    "clinical-db"
+  ],
+  "plan_action_parity": true,
+  "local_llm_accuracy": "not measured; no Qwen3/Ollama inference was run for this evaluation",
+  "malware_scanning": "not performed; unknown for all backups"
+}

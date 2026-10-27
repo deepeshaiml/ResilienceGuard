@@ -1,0 +1,108 @@
+{
+  "data_type": "database",
+  "fixture": true,
+  "record_count": 20,
+  "records": [
+    {
+      "encounter_code": "E-218988",
+      "record_id": "SIM-P-0001",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-938776",
+      "record_id": "SIM-P-0002",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-338678",
+      "record_id": "SIM-P-0003",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-805594",
+      "record_id": "SIM-P-0004",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-239453",
+      "record_id": "SIM-P-0005",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-962067",
+      "record_id": "SIM-P-0006",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-609660",
+      "record_id": "SIM-P-0007",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-524112",
+      "record_id": "SIM-P-0008",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-668279",
+      "record_id": "SIM-P-0009",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-193949",
+      "record_id": "SIM-P-0010",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-109100",
+      "record_id": "SIM-P-0011",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-972580",
+      "record_id": "SIM-P-0012",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-520007",
+      "record_id": "SIM-P-0013",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-708982",
+      "record_id": "SIM-P-0014",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-471894",
+      "record_id": "SIM-P-0015",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-446304",
+      "record_id": "SIM-P-0016",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-458157",
+      "record_id": "SIM-P-0017",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-301517",
+      "record_id": "SIM-P-0018",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-778364",
+      "record_id": "SIM-P-0019",
+      "synthetic": true
+    },
+    {
+      "encounter_code": "E-738554",
+      "record_id": "SIM-P-0020",
+      "synthetic": true
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,17 @@
+.venv/
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+__pycache__/
+.pytest_cache/
+.coverage
+artifacts/resilienceguard.db
+artifacts/restores/
+artifacts/rendered/
+artifacts/review-render/
+artifacts/*.pdf
+artifacts/*.pptx
+artifacts/*.docx
+*.pyc
+.DS_Store

@@ -1,0 +1,22 @@
+{
+  "snapshot": "2026-10-26",
+  "python": {
+    "tool": "pip-audit 2.10.1",
+    "target": "backend/requirements-dev.txt and resolved dependencies",
+    "audited_packages": 60,
+    "vulnerability_findings": 0,
+    "summary": "0 known vulnerabilities found"
+  },
+  "npm": {
+    "tool": "npm audit",
+    "target": "frontend/package-lock.json",
+    "audited_packages": 66,
+    "vulnerability_findings": 0,
+    "summary": "0 findings"
+  },
+  "remediation_history": [
+    "Initial npm audit identified high severity image-size parser advisories through PptxGenJS; image-size was pinned to patched 2.0.3 and the lockfile was re-audited.",
+    "Initial pip-audit identified CVE-2025-71176 in pytest 8.4.2; the development pin was upgraded to pytest 9.0.3 and tests and the full dev dependency audit were rerun."
+  ],
+  "limitations": "Point-in-time dependency advisory scans only; no full SAST, container image scan, penetration test, or runtime security certification."
+}

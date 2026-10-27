@@ -1,0 +1,48 @@
+{
+  "data_type": "identity",
+  "fixture": true,
+  "record_count": 8,
+  "records": [
+    {
+      "principal_id": "SIM-U-0001",
+      "role": "clinician",
+      "synthetic": true
+    },
+    {
+      "principal_id": "SIM-U-0002",
+      "role": "operator",
+      "synthetic": true
+    },
+    {
+      "principal_id": "SIM-U-0003",
+      "role": "clinician",
+      "synthetic": true
+    },
+    {
+      "principal_id": "SIM-U-0004",
+      "role": "operator",
+      "synthetic": true
+    },
+    {
+      "principal_id": "SIM-U-0005",
+      "role": "clinician",
+      "synthetic": true
+    },
+    {
+      "principal_id": "SIM-U-0006",
+      "role": "operator",
+      "synthetic": true
+    },
+    {
+      "principal_id": "SIM-U-0007",
+      "role": "clinician",
+      "synthetic": true
+    },
+    {
+      "principal_id": "SIM-U-0008",
+      "role": "operator",
+      "synthetic": true
+    }
+  ],
+  "schema_version": 1
+}

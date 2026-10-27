@@ -1,0 +1,8 @@
+fastapi==0.161.1
+pydantic==2.14.0
+SQLAlchemy==2.1.6
+networkx==3.5
+uvicorn[standard]==0.38.0
+psycopg[binary]==3.2.12
+httpx==0.28.1
+reportlab==4.4.6

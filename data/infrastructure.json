@@ -1,0 +1,50 @@
+[
+  {
+    "failure_domain": "dc-primary",
+    "id": "primary-compute",
+    "kind": "compute",
+    "name": "Primary data center compute"
+  },
+  {
+    "failure_domain": "dc-primary",
+    "id": "primary-network",
+    "kind": "network",
+    "name": "Primary site network"
+  },
+  {
+    "failure_domain": "dc-primary",
+    "id": "primary-storage",
+    "kind": "storage",
+    "name": "Primary storage array"
+  },
+  {
+    "failure_domain": "dc-recovery",
+    "id": "recovery-storage",
+    "kind": "storage",
+    "name": "Recovery site storage"
+  },
+  {
+    "failure_domain": "dc-recovery",
+    "id": "recovery-network",
+    "kind": "network",
+    "name": "Independent recovery network"
+  },
+  {
+    "failure_domain": "dc-recovery",
+    "id": "recovery-compute",
+    "kind": "compute",
+    "name": "Isolated recovery host"
+  },
+  {
+    "failure_domain": "dc-primary",
+    "id": "vault-east",
+    "kind": "backup_location",
+    "name": "East backup vault"
+  },
+  {
+    "failure_domain": "dc-recovery",
+    "id": "vault-west",
+    "kind": "backup_location",
+    "name": "West backup vault"
+  }
+]
